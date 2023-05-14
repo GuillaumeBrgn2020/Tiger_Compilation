@@ -1,0 +1,9 @@
+let 
+    var x:= 0
+    var y : int := 10
+    var c:= "a"
+    var d := 1/0
+
+in 
+
+end

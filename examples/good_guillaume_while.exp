@@ -1,0 +1,12 @@
+let 
+    var i := 0
+    var n := 10
+in
+    while i<n do (
+        i := i+1;
+        if i=5 then
+            print_int(i)
+        else 
+            print_int(n)
+    )
+end

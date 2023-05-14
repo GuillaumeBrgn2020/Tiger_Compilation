@@ -1,0 +1,12 @@
+let
+    var a : int := 1
+    var n : int := 8
+
+    function main(int : k int : p) : int = (
+        for i := a to n do (
+                a := a * i + n - 1
+            )
+    )
+in
+main(0 0)
+end

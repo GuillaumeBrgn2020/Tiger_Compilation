@@ -1,0 +1,8 @@
+let 
+    var i := 0
+    var n := 10
+in
+    while i<n do (
+        i := i+1
+    )
+end

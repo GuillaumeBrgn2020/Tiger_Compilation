@@ -1,0 +1,10 @@
+let
+    type intArray = array of int
+    type triplet = {
+        String : name,
+        int : a,
+        int : b,
+        int : c
+    }
+in
+end

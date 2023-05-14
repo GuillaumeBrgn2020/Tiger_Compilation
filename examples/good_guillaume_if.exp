@@ -1,0 +1,16 @@
+let 
+    var x := 10
+    var y : int := 50
+
+in
+
+    if(x<y) 
+        then (
+            print(x);
+            print(x + y)
+            )
+        else 
+            print(y)
+    ;
+    main(0)
+end

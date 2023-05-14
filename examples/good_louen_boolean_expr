@@ -1,0 +1,23 @@
+let
+    var a := true & (false | 0) | 1
+    var b := (a <> false) = ((0 < 1) & (2 >= 2))
+    var c := a + b - a
+    var d := c * (a * b) / (a * c)
+
+    function main(int : x int : y) : int = (
+        var res : int := x + y - x * y;
+        print(res);
+        return(res * 2)
+    )
+in
+if(main(4 3) > main(0 3))
+    then (
+        if(a <> b)
+            then(
+                print(a)
+            )
+            else (
+                print(b)
+            )
+    )
+end

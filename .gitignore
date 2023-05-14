@@ -1,0 +1,16 @@
+
+
+.idea
+.vscode
+.antlr
+bin
+
+./.idea
+./.vscode
+./bin 
+./.antlr
+
+./src/parser/exprLexer.java
+./src/parser/exprParser.java
+
+./src/parser/

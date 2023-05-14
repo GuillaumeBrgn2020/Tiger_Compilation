@@ -1,0 +1,31 @@
+let /* The eight queens solver from Appel */
+    var N := 8
+    var M := "abc"
+    type intArray = array of int
+    var row := intArray [ N ] of 0
+    var P := "e"
+    var N := 1
+    type intArray = array of int
+    var z : stringArray := 1
+    var op := 1
+
+    function printboard() =
+        ( 
+        N := "abc";
+        M := 5;
+        f := 1 / 0;
+        op := 1 + P;
+        for i := 0 to N-1 do
+            print("\n")
+        )
+
+    function try(c:int, c:int) : int =
+            print("\n")
+
+
+    function try(c:int) : int = 1
+    function printboard(b:int, b:int) = print("\n")
+    function M() = print("\n")
+    var try := 1
+
+in try() ; wrong() ; P := N; try(a) end

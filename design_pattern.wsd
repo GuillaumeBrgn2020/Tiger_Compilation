@@ -1,0 +1,40 @@
+@startuml Design pattern AST
+
+
+interface Ast{
+    + <T> T accept(AstVisitor<T> visitor)
+}
+
+interface AstVisitor<T>{
+    + void visit(ArrayAccess arrayAccess)
+    + void visit(Affectation affectation)
+}
+
+class AstCreator{
+    + String create(Ast ast)
+}
+
+class GraphVizVisitor{
+    + String visit(ArrayAccess arrayAccess)
+    + String visit(Affectation affectation)
+}
+
+class ArrayAccess{
+    + <T> T accept(AstVisitor<T> visitor)
+}
+
+class Affectation{
+    + <T> T accept(AstVisitor<T> visitor)
+}
+
+
+
+AstVisitor <|.. GraphVizVisitor
+Ast <|.. ArrayAccess
+Ast <|.. Affectation
+AstCreator -- Ast
+AstCreator -- AstVisitor
+
+
+
+@enduml

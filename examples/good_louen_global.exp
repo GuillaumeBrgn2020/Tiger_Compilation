@@ -1,0 +1,33 @@
+let
+    var a : string := "bonsoir"
+    var b : int := 4
+    var c : int := (b - b * b) / b
+    type typeD = {
+        int : attributInt_E,
+        string : attributString_F
+    }
+    type typeG = {
+        string : attributString_H,
+        typeD : attributTypeD_I
+    }
+    var j := typeD {
+        attributInt_E = c,
+        attributString_F = a
+    }
+    var k := typeG {
+        attributString_H = a,
+        attributTypeD_I = j
+    }
+
+    function f1 (string : l, typeD : m) : typeG = (
+        str := l + "_" + a + "_" + m.attributString_H;
+        d := typeD {
+            attributInt_E = m.attributInt_E,
+            attributString_F = str
+        };
+        g := typeG {
+            attributString_H = d.attributString_F,
+            attributTypeD_I = d
+        }
+    )
+in main() end
